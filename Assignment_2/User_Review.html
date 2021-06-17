@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>AHBNB User Reveiw</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		p {margin-left: 0.3cm; text-align:left;}
+	</style>
+	<script type="text/javascript">
+		function validate()
+		{
+			var at = document.formBnb.Email.value.indexOf("@");
+			if(document.formBnb.Name.value == "")
+			{
+				alert("Please enter your Name");
+				return false;
+			}
+			else if(document.formBnb.Age.selectedIndex == 0)
+			{
+				alert("Please enter your age.");
+				return false;
+			}
+			else if(at < 1)
+			{
+				alert("Please enter a valid email address");
+				return false;
+			}
+			else if (!document.formBnb.continent[0].checked &&
+			!document.formBnb.continent[1].checked &&
+			!document.formBnb.continent[2].checked &&
+			!document.formBnb.continent[3].checked &&
+			!document.formBnb.continent[4].checked &&
+			!document.formBnb.continent[5].checked &&
+			!document.formBnb.continent[6].checked)
+			{
+				alert("Please select the continent in which you live.");
+				return false;
+			}
+			else
+			{
+				alert("Thanks "+document.formBnb.Name.value+".");
+				return true;
+			}
+		}
+	</script>
+</head>
+
+<div id="total">
+	<h1>Air Head BnB User Review Form</h1>
+	<p style="margin-bottom:5px">This is a Form to allow you, our dear customer to give your stay a review so we can better accomudate you and others in the future.<br>
+	<a href="https://www.visser.com.au/blog/generic-privacy-policy-for-australian-websites/">--Privacy Policy--</a>
+
+	<form action="mailto:c3233787@uon.edu.au" method="post" name="formBnb" >
+		<p style="margin-top:0cm">
+			BNB Form:
+			<br>
+			<br>
+			<label For="Name">Full Name*:</label>
+			<input type="text" size="10" id="Name">
+
+			<label For="Age">Age*:</label>
+			<select name="text" id="Age">
+				<option value="Select Age" selected="selected">Select Age</option>
+				<option value="18-20">18 to 20</option>
+				<option value="21-30">21 to 30</option>
+				<option value="31-40">31 to 40</option>
+				<option value="41-50">41 to 50</option>
+				<option value="51-60">51 to 60</option>
+				<option value="61+">61+</option>
+			</select>
+			<br>
+			<br>
+
+			<label For="Email">Email*:</label>
+			<input type="text" size="20" id="Email">
+			<br>
+			<br>
+			What continent do you live on?*<br>
+			<label For="af">Africa</label>
+			<input type="checkbox" name="continent" value="Africa" id="af">
+			<label For="an">Antarctica</label>
+			<input type="checkbox" name="continent" value="Antarctica" id="an">
+			<label For="as">Asia</label>
+			<input type="checkbox" name="continent" value="Asia" id="as">
+			<label For="eu">Europe</label>
+			<input type="checkbox" name="continent" value="Europe" id=eu><br>
+			<label For="na">North America</label>
+			<input type="checkbox" name="continent" value="NorthAmerica" id="na">
+			<label For="sa">South America</label>
+			<input type="checkbox" name="continent" value="SouthAmerica" id="sa">
+			<label For="oce">Oceania</label>
+			<input type="checkbox" name="continent" value="Oceania" id="oce">
+			<br>
+			<br>
+
+			What room did you stay in?<br>
+				<label For="L1">Room 1-l</label>
+				<input type="radio" value="l1" name="rooms" id="L1">
+				<label For="L2">Room 2-l</label>
+				<input type="radio" value="l2" name="rooms" id="L2">
+				<label For="L3">Room 3-l</label>
+				<input type="radio" value="l3" name="rooms" id="L3"><br>
+				<label For="B1">Room 1-b</label>
+				<input type="radio" value="b1" name="rooms" id="B1">
+				<label For="B2">Room 2-b</label>
+				<input type="radio" value="b2" name="rooms" id="B2">
+				<label For="B3">Room 3-b</label>
+				<input type="radio" value="b3" name="rooms" id="B3">
+				<br>
+				<br>
+			How long was your stay?<br>
+				<label For="stay">Length in Weeks:</label>
+				<input type="text" size="10" id="stay">
+				<br>
+				<br>
+			How many times have you stayed here before?<br>
+				<label for="1to2">1-2</label>
+				<input type="radio" value="1-2" name="stayed" id="1to2">
+				<label for="3to4">3-4</label>
+				<input type="radio" value="3-4" name="stayed" id="3to4">
+				<label for="5orMore">5+</label>
+				<input type="radio" value="5+" name="stayed" id="5orMore">
+				<br>
+				<br>
+			How would you rate your stay (out of 5 stars)<br>
+				<label for="1s">1</label>
+				<input type="radio" value="1" name="star" id="1s">
+				<label for="2s">2</label>
+				<input type="radio" value="2" name="star" id="2s">
+				<label for="3s">3</label>
+				<input type="radio" value="3" name="star" id="3s">
+			    <label for="4s">4</label>
+				<input type="radio" value="4" name="star" id="4s">
+				<label for="5s">5</label>
+				<input type="radio" value="5" name="star" id="5s">
+				<br>
+				<br>
+			Would you like to leave any extra comments?<br>
+				<textarea rows="10" cols="30"></textarea><br>
+				<br>
+				<input type="submit" value="Submit" onclick="return validate()">
+				<input type="reset" value="Clear">
+		</p>
+	</form>
+	<br>
+	<a href="index.html">Back To Home Page</a>
+	<br>
+</div>

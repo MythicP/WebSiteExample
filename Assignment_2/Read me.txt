@@ -1,0 +1,12 @@
+student number: c3233787
+student name: Michael Price
+files: 
+  -images folder(and all contained images)
+  -index.html
+  -style.css
+  -xml_budget.xml
+  -xml_luxury.xml
+  -RoomPage.xsl
+  -User_Review.html
+and 
+-Image refrences(url's of the images)

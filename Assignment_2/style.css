@@ -1,0 +1,82 @@
+body {background-image: url('images/beach-02.jpg'); background-attachment: fixed;}
+
+img {margin-right: 1cm;padding:2px;background-color: navy;}
+
+#total
+{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#bbffff;
+}
+
+#main{font-family:times;}
+
+form 
+{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#aaffff;
+	border-style: solid;
+	border-color: #a0d0ff;
+	border-radius: 5px;
+}
+
+p {margin-left: 1cm; text-align:left; padding: 8px;}
+
+h1{background-color:#aaddff; padding: 0.5cm; text-transform: uppercase; text-align: center;}
+
+h2{text-decoration: underline; text-transform: uppercase; text-align: center;}
+
+h3{text-align:center;}
+
+div.copyright{margin-right:0.5cm ;padding: 5px; text-align:right; font-style: italic;}
+
+ul {list-style-type: none;}
+
+#nav{text-align:center; margin-left: auto; margin-right: auto;}
+#nav2{text-align:center; margin-left: auto; margin-right: auto;}
+
+#left-c {float: left; width: 33%}
+#mid-c {display: inline-block; width: 33%}
+#right-c {float: right; width: 33%}
+#left-c2 {float: left; width: 33%}
+#mid-c2 {display: inline-block; width: 33%}
+#right-c2 {float: right; width: 33%}
+
+#room1
+{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#aaffff;
+	border-style: solid;
+	border-color: #a0d0ff;
+	border-radius: 5px;
+}
+#room2
+{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#aaffff;
+	border-style: solid;
+	border-color: #a0d0ff;
+	border-radius: 5px;
+}
+#room3
+{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#aaffff;
+	border-style: solid;
+	border-color: #a0d0ff;
+	border-radius: 5px;
+}
+
+a:link  {color:blue}
+a:visited {color:gray}
+a:active{color::red}
+a:hover{font-size:120%}
