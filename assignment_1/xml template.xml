@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE accommodation [
+<!ELEMENT accommodation (availblity, room*)>
+	<!ELEMENT availblity (#PCDATA)>
+	<!ELEMENT room (name, size, cost, view, photo, links?, courtyard?, bathroom, lighting?, air-con?, tv?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT size (#PCDATA)>
+	<!ELEMENT cost (short, long)>
+	<!ELEMENT short (#PCDATA)>
+	<!ELEMENT long (#PCDATA)>
+	<!ATTLIST room stairs (up|down) "down">
+	<!ELEMENT view (#PCDATA)>
+	<!ELEMENT photo (#PCDATA)>
+	<!ELEMENT links (#PCDATA)>
+	<!ELEMENT courtyard (#PCDATA)>
+	<!ELEMENT bathroom (#PCDATA)>
+	<!ELEMENT lighting (#PCDATA)>
+	<!ELEMENT air-con (#PCDATA)>
+	<!ELEMENT tv (#PCDATA)>
+	<!ENTITY pri "Private bathroom">
+]>
+
+<accommodation>
+	<availblity>----</availblity>
+	<room stairs="up">
+		<name>----</name>
+		<size>no.ofpeople</size>
+		<cost>
+			<short>$</short>
+			<long>$$</long>
+		</cost>
+		<view>----</view>
+		<photo>---</photo>
+		<links>----</links>
+		<courtyard>y/n</courtyard>
+		<bathroom>&pri;</bathroom>
+		<lighting>---</lighting>
+		<air-con>---</air-con>
+		<tv>----</tv>
+	</room>
+</accommodation>
+	

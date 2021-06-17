@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE accommodation [
+<!ELEMENT accommodation (availblity, room*)>
+	<!ELEMENT availblity (#PCDATA)>
+	<!ELEMENT room (name, size, cost, view, photo, links?, courtyard?, bathroom, lighting?, air-con?, tv?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT size (#PCDATA)>
+	<!ELEMENT cost (short, long)>
+	<!ELEMENT short (#PCDATA)>
+	<!ELEMENT long (#PCDATA)>
+	<!ATTLIST room stairs (up|down) "down">
+	<!ELEMENT view (#PCDATA)>
+	<!ELEMENT photo (#PCDATA)>
+	<!ELEMENT links (#PCDATA)>
+	<!ELEMENT courtyard (#PCDATA)>
+	<!ELEMENT bathroom (#PCDATA)>
+	<!ELEMENT lighting (#PCDATA)>
+	<!ELEMENT air-con (#PCDATA)>
+	<!ELEMENT tv (#PCDATA)>
+	<!ENTITY pri "Private bathroom">
+]>
+<accommodation>
+	<availblity>3</availblity>
+	
+	<room stairs="up">
+		<name>Room 1-b</name>
+		<size>1</size>
+		<cost>
+			<short>$60 per night</short>
+			<long>$340 per week</long>
+		</cost>
+		<view>modest view of the surrounding beach</view>
+		<photo>images/small-room1b.jpg</photo>
+		<links>recomendations_room1b.txt</links>
+		<bathroom>shared bathroom</bathroom>
+		<air-con>next to a lux room so it gets directly effected by their air-con</air-con>
+	</room>
+
+	<room stairs="up">
+		<name>Room 2-b</name>
+		<size>1</size>
+		<cost>
+			<short>$100 per night</short>
+			<long>$600 pre week</long>
+		</cost>
+		<view>modest veiw of a wall, yes... a wall</view>
+		<photo>images/small-room2b.jpg</photo>
+		<links>recomendations_room2b.txt</links>
+		<bathroom>shared bathroom</bathroom>
+	</room>
+
+	<room stairs="down">
+		<name>Room 3-b "aka the closet"</name>
+		<size>maybe 1, maybe..</size>
+		<cost>
+			<short>$40 per night</short>
+			<long>$240 per week</long>
+		</cost>
+		<view>view of the void.</view>
+		<photo>images/small-room3b.jpg</photo>
+		<links>recomendations_room3b.txt</links>
+		<courtyard>access to a small garden of 3 flowers and alot of sand</courtyard>
+		<bathroom>access to the upstairs shared bathroom</bathroom>
+		<lighting>no lighting</lighting>
+	</room>
+
+</accommodation>

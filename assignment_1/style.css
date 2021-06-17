@@ -1,0 +1,36 @@
+body {background-image: url('images/beach-02.jpg'); background-attachment: fixed;}
+
+img {margin-right: 1cm;padding:2px;background-color: navy;}
+
+#total
+{
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#bbffff;
+}
+
+#main{font-family:times;}
+
+p {margin-left: 1cm; text-align:left; padding: 8px;}
+
+h1{background-color:#aaddff; padding: 0.5cm; text-transform: uppercase;}
+
+h2{text-decoration: underline; text-transform: uppercase;}
+
+h3{text-align:center;}
+
+div.copyright{margin-right:0.5cm ;padding: 5px; text-align:right; font-style: italic;}
+
+ul {list-style-type: none;}
+
+#nav{text-align:center; margin-left: auto; margin-right: auto;}
+
+#left-c {float: left; width: 33%}
+#mid-c {display: inline-block; width: 33%}
+#right-c {float: right; width: 33%}
+
+a:link  {color:blue}
+a:visited {color:gray}
+a:active{color::red}
+a:hover{font-size:120%}

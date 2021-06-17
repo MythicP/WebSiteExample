@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE accommodation [
+<!ELEMENT accommodation (availblity, room*)>
+	<!ELEMENT availblity (#PCDATA)>
+	<!ELEMENT room (name, size, cost, view, photo, links?, courtyard?, bathroom, lighting?, air-con?, tv?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT size (#PCDATA)>
+	<!ELEMENT cost (short, long)>
+	<!ELEMENT short (#PCDATA)>
+	<!ELEMENT long (#PCDATA)>
+	<!ATTLIST room stairs (up|down) "down">
+	<!ELEMENT view (#PCDATA)>
+	<!ELEMENT photo (#PCDATA)>
+	<!ELEMENT links (#PCDATA)>
+	<!ELEMENT courtyard (#PCDATA)>
+	<!ELEMENT bathroom (#PCDATA)>
+	<!ELEMENT lighting (#PCDATA)>
+	<!ELEMENT air-con (#PCDATA)>
+	<!ELEMENT tv (#PCDATA)>
+	<!ENTITY pri "Private bathroom">
+]>
+
+<accommodation>
+	<availblity>3</availblity>
+	
+	<room stairs="up">
+		<name>Room 1-l</name>
+		<size>2</size>
+		<cost>
+			<short>$500 per night</short>
+			<long>$3,000 per week</long>
+		</cost>
+		<view>panoramic veiw of the city of Dubais</view>
+		<photo>images/lux-1.jpg</photo>
+		<links>recomendations_room1l.txt</links>
+		<bathroom>&pri;</bathroom>
+		<air-con>has air-con</air-con>
+		<tv>has cable tv</tv>
+	</room>
+
+		<room stairs="down">
+		<name>Roome 2-l</name>
+		<size>2</size>
+		<cost>
+			<short>$320 per night</short>
+			<long>$1,320 per week</long>
+		</cost>
+		<view>veiw of the beach</view>
+		<photo>images/lux-2.jpg</photo>
+		<links>recomendations_room2l.txt</links>
+		<courtyard>private courtyard</courtyard>
+		<bathroom>&pri;</bathroom>
+		<lighting>mood lighting</lighting>
+		<tv>has cable tv</tv>
+	</room>
+
+		<room stairs="down">
+		<name>Room 3-l</name>
+		<size>2</size>
+		<cost>
+			<short>$430 per night</short>
+			<long>$1,980 per week</long>
+		</cost>
+		<view>very little to see from the windows</view>
+		<photo>images/lux-3.jpg</photo>
+		<links>recomendations_room3l.txt</links>
+		<courtyard>private courtyard</courtyard>
+		<bathroom>&pri;</bathroom>
+		<air-con>has air-con</air-con>
+		<tv>has cable tv</tv>
+	</room>
+	
+</accommodation>
